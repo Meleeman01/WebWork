@@ -1,0 +1,646 @@
+/*Paul Frank December 3, 2015*/	
+
+/*Fonts*/
+@font-face{
+	font-family:'Amatic-Bold';
+	src:url('../fonts/Amatic-Bold.ttf') ;
+}
+
+@font-face{
+	font-family: 'belligerent';
+	src: url('../fonts/belligerent.ttf');
+}
+
+@font-face{
+	font-family: 'ABeeZee-Regular' ;
+	src: url('../fonts/ABeeZee-Regular.otf');
+}
+
+
+/* links*/
+	a:link{color: #600060;
+		font-family: sans-serif;
+		text-decoration: none;
+                padding:2px;
+	}
+
+	a:hover{
+	
+		
+		text-decoration: none;
+ }
+ 
+ nav li{
+         padding:2px;
+ }
+ 
+ nav li a:hover{
+ 	background-color: #660066;
+ 	border-radius: 10px 10px 10px 0px;
+ 	
+ 	color: #fff;
+ 	
+ }
+ nav li a:hover{
+ 	background-color: #660066;
+ 	border-radius: 10px 10px 10px 0px;
+ 	
+ 	color: #fff;
+ 	
+ }
+ 
+
+	a:visited{
+		text-decoration: none;
+}				
+	a:active{
+		text-decoration: none;
+
+	}
+
+h1{	
+	margin-bottom:0em;
+	font-family:"belligerent", Cambria, Serif;
+	font-size:3em;
+	text-shadow:2px 2px 4px #4a4a4a;
+	}
+h2{
+	font-family:"Amatic-Bold";
+	font-weight:bolder;
+	font-size:3em;
+	letter-spacing:.1em;
+	text-indent:.25em;
+	margin-bottom:0em;
+	}	
+nav{
+	font-family:ABeeZee-Regular;
+	
+	letter-spacing:.1em;
+}
+body {
+	z-index: 2;
+	 background: #FFFFFF;
+	 font-family:ABeeZee-Regular, sans-serif;
+	 background-image:url(plaid4.png); 
+	 
+	 background-repeat: repeat;
+
+ }
+ 
+ 
+ #socialmedia{
+ 	position: relative;
+ 	right:0em;
+ 	top: -4.8em;
+ 	overflow: hidden;
+ 	
+ }
+ #socialmedia img{
+ 	width: 2em;
+ 	height: 2em;
+ 	float: right;
+ 	margin-right: 3px;
+
+ }
+
+
+ #wrapper{
+ 	z-index: 3;
+ 	margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5em;
+		width: 97.9166667%;
+		max-width: 960px;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		padding-left: 5px;
+		padding-right: 5px;
+		
+		border-radius: 10px;
+		box-shadow: 2px 5px 5px #222;
+		overflow: hidden;
+		
+		max-height: 100%;
+		background-color: rgb(255,255,255);	
+		background-color: rgba(255, 255, 255, 0.5);		
+ }
+
+ #currentimg{
+ 	float: left;
+        margin-top:-1em;
+ 	margin-left: 0px;
+ 	border-radius: 10px;
+ 	width: 100%;
+	
+ }
+ 
+ /*----------------edit 2/3/2016 authorscomment. to address issues with the authors comment box being too large.------------------------*/
+ #authorscomment{
+         background-color: #ccc;
+ 	border-radius: 10px;
+ 	padding: 5px;
+ 	overflow:auto;
+ 	overflow-x:hidden; 
+	margin-bottom:3em;
+       
+ }
+ 
+ #authorscomment img{
+         border-radius: 20px;
+ 	border:solid black 6px;
+ 	float: left;
+ 	margin-right: 3px;
+ }
+ 
+ 
+/*-----------------------------------------end of 2/3/2016 edit--------------------------*/ 
+ #news{
+ 	background-color: #ccc;
+ 	border-radius: 10px;
+ 	padding: 5px;
+ 	overflow: scroll;
+ 	overflow-x:hidden; 
+	margin-bottom:3em;
+        margin-right:0em;
+        margin-left:0em;
+        height:40em;
+        float:left;
+        max-width:100%;
+ }
+
+
+ .comments{
+ 	background-color: #ccc;
+ 	border-radius: 10px;
+ 	padding: 5px;
+ 	overflow: hidden;
+ 	overflow-x:hidden; 
+	margin-bottom:3em;
+      
+        
+ }
+
+ #news img{
+ 	border-radius: 20px;
+ 	border:solid black 6px;
+ 	float: left;
+ 	margin-right: 3px;
+	
+ }
+ .imgcontainer{
+ 	overflow: hidden;
+ 	text-align: center;
+ 	float: left;
+ 	font-weight: bold;
+ 	height:auto;
+ 	vertical-align: middle;
+        clear:left;
+ }
+ #textcontainer{
+ 	position: relative;
+ 	left: 0em;
+ 	
+ }
+
+#date{
+	margin-top: -1em;
+}
+
+ header{
+				border-radius: 10px; 
+		 padding: 5px;
+		margin-top: -1em;	
+		background-color:#fff; 
+		
+
+	}
+header img{
+	width: 100%;
+}	
+
+	nav{
+		
+		border-radius: 3px;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #ffff66;
+
+	}
+
+	nav ul{
+		text-align: center;
+	}
+
+	nav ul li {
+		display: inline
+		;
+		border-radius: 10px 25px 25px 10px;
+		list-style-type: none;
+		
+		margin-right: 20px;
+		padding: 2px;
+	}
+#comicnav {
+	border-radius: 3px;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #111111;
+		
+	}
+#comicnav ul{
+	 text-align:center;
+ 	
+}
+#comicnav ul li{
+		display: inline;
+		margin-right: 20px;
+		padding: 2px;
+		font-weight:bold;
+		color:#FFFFFF;
+	}
+#comicnav li:hover {
+	text-shadow:2px 2px 2px #A08BB7;
+	}	
+
+h2{
+	color: #660066;
+
+}	
+
+footer{
+	z-index: 1;
+	
+	
+	
+	border-radius: 5px;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	
+	text-align:center;
+	
+	
+	width:inherit;
+	margin-top: 4em;
+	
+	
+
+
+
+
+}
+
+footer p{
+	font-size:1em;
+	}
+
+footer:hover{
+opacity: 1;
+}
+
+.clear{
+	clear: left;
+}
+
+/*Ads go here  */
+
+#Adbanner {
+      
+	overflow: hidden;
+ 	text-align: center;
+ 	
+ 	font-weight: bold;
+ 	height:auto;
+ 	margin-left:auto;
+	margin-right:auto;
+	}
+#Adbanner img{
+	width:100%;
+	}	
+
+#adDiv{
+	position:absolute;
+	left:2%;
+	top:50em;
+	overflow:hidden;
+	width:auto;
+	float:left;
+	
+	}
+#adDiv img{
+	border-radius:10px;
+	width:100%;
+	}	
+	
+#adDiv2{
+	position:absolute;
+	left:86%;
+	top:50em;
+	overflow:hidden;
+	width:auto;
+	float:left;
+	}
+#adDiv2 img{
+	border-radius:10px;
+	width:100%;
+	}
+	
+/*/////////////////////////////////////////////////////////ProjectWonderfulCode\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+        
+/*//////////////////////////////////////////////////////////////////Form Code here\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/        
+form{
+	text-align:center;
+        margin-left:auto;
+       
+	}
+        
+#comments{
+      display:inline-block;
+      text-align:left;
+    width: 50em;
+     border-radius: 10px;
+
+	padding: .25em;
+       
+	overflow: hidden;   
+    
+        
+        
+}
+
+#comments ul{
+        
+        
+         list-style-type:none;
+}
+
+#comments ul li{
+        
+        clear: both;
+	margin-bottom: .5em;
+	
+	float: left;
+}
+
+#comments label{
+        
+      display: block;
+	float: left;
+	width: 10em;
+	text-align: left;
+	margin-right: 1em;
+        margin-bottom:1em;
+        
+}
+#comments img{
+               
+        clear:left;       
+        float:left;
+        border-radius:100px;
+        margin-bottom:1em;
+        margin-left:2em;
+        border:inset 4px #660066;
+}
+
+#comments input.textinput, textarea{
+        clear:left;
+        float:left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .875em;
+	border-radius: 4px;
+}
+
+#comments input.textinput{
+	width: 30em;
+	height: 2em;
+	border: 1px solid #666;
+}
+
+textarea {
+        clear:left;
+        float:left;
+	display:inline-block;
+	width: 15em;
+	height: 10em;
+	border: 1px solid #666;
+	margin-bottom: 1em;
+	line-height: 1.25;
+	overflow: auto;
+	resize: none;
+}
+
+#comments input[type="submit"], input[type="reset"]{
+	display:inline-block;
+        clear:left;
+        float:left;
+	width: 10em;
+	height: 2em;
+	float: left;
+	background: white;
+	font-size: inherit;
+	border: 1px solid #660066;
+	border-radius: 4px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+
+#comments input[type="submit"]
+{
+	margin-left: 0em;
+	margin-right: 1em;
+	margin-bottom: .25em;
+}
+
+#comments input[type="submit"]:active, input[type="reset"]:active{
+	background:#aaa;
+	box-shadow: 6px 6px 5px rgba(0,0,0,.5);
+}
+
+
+      
+        
+
+@media screen and (min-width: 300px){
+	footer p{
+		clear:left;
+		font-size:.7em;
+		text-align:center;
+		line-height:1.1em;
+		}
+		#adDiv img{
+			display:none;
+			}
+		  #adDiv2 img{
+	display:none;}
+	 #socialmedia{
+ 	position: relative;
+ 	right:0em;
+ 	top: -5.2em;
+ 	overflow: hidden;}
+
+
+	
+#news{
+ 	background-color: #ccc;
+ 	border-radius: 10px;
+ 	padding: 5px;
+ 	overflow: scroll;
+ 	overflow-x:hidden; 
+	clear:left;
+ }
+ #textcontainer h3{
+	 clear:left;
+	 }
+
+		}
+ #adDiv2{
+                
+                        z-index:0;
+                        display:none;
+                        
+                }    
+                
+ #adDiv{
+                
+                       z-index:0;
+                       display:none;
+           }                   
+	
+@media screen and (min-width: 400px){
+	h1{
+		letter-spacing:.2em;
+		}
+	
+	#news{
+ 	background-color: #ccc;
+ 	border-radius: 10px;
+ 	padding: 5px;
+ 	overflow: scroll;
+ 	overflow-x:hidden; 
+	}
+	 #adDiv img{
+			display:none;
+			}
+		  #adDiv2 img{
+	display:none;}
+	
+	
+	
+	 #textcontainer h3{
+	 clear:none;
+	 }
+	 
+	 footer{
+		 font-size:.8em;
+		 text-align:center;
+		 }
+		 #adDiv img{
+			display:none;
+			}
+		  #adDiv2 img{
+	display:none;}
+	
+	#socialmedia{
+ 	position: relative;
+ 	right:0em;
+ 	top: -2.8em;
+ 	overflow: hidden;}
+        
+        #adDiv2 {
+                
+                        display:none;
+                }      
+	 
+}
+
+@media screen and (min-width:966px){
+        #news{
+                max-width:58%;
+        }
+        
+         #facebook-container{
+               float:left;
+           width:auto;
+               margin-bottom:3em;
+               margin-left:2em;
+              
+               overflow:hidden;
+            }
+}
+
+@media screen and (min-width: 900px){
+	footer{
+		 font-size:1em;
+		 text-align:center;
+		 }
+		 
+		 #adDiv2 img{
+	display:none;
+}
+		#adDiv {
+			display:none;
+			}
+                #adDiv2 {
+                
+                        display:none;
+                } 
+                
+                
+}
+
+@media screen and (min-width: 1400px){
+	/*Ads go here  */
+
+#adDiv{
+	position:absolute;
+	left:2%;
+	top:80em;
+	overflow:hidden;
+	width:auto;
+	float:left;
+        display:block;
+	
+	}
+#adDiv img{
+	display:block;
+	border-radius:10px;
+	width:100%;
+	}	
+	
+#adDiv2{
+	position:absolute;
+	left:86%;
+	top:80em;
+	overflow:hidden;
+	width:auto;
+	float:left;
+        display:block;
+	}
+#adDiv2 img{
+	display:block;
+	border-radius:10px;
+	width:100%;
+	}		
+	footer{
+		 font-size:1.5em;
+		 text-align:center;
+		 }
+	}
+              
+	
+	/*PRINT STYLES BELOW*/
+@media (print){
+	body { background:white; color:black; margin:0 }
+	footer{display:none;}
+		 #adDiv2 img{
+	display:none;
+}
+		#adDiv img{
+			display:none;
+			}
+	
+	#wrapper{
+		display:block;
+		}
+	}
