@@ -1,0 +1,63 @@
+/*flex box always has a direction. main axis is left to right, Cross
+axis is top to bottom. different CSS properties to style. direction can be flipped however.*/
+
+.container {
+	border: 5px solid #ffcc5c;
+	display: flex;
+	//flex-wrap: wrap;
+//height: 100%;
+//flex-direction: column;
+	/*align-items: flex-end; /*justify's content on Y-axis*/
+	/*justify-content:flex-end;/*justify's content on X-axis*/
+/*	flex-direction:row ; column stacks teh childen on top of eachother*/
+	
+	/*justify-content:flex-end; flex-start flex-end center space-around space-between
+	space-evenly */
+
+}
+.home{
+	order: 3;
+	/*order: 0; this is the default order. the items in flex box are source indiependant
+	so this means you can set the order of each item however you want.*/
+	flex: 1 1 200px;
+	/*same as flex-grow:1;
+			  flex-shrink:1;
+			  flex-basis: 200px;
+	*/
+}
+.search{
+	order: -1;
+	flex: 1 1 200px;
+}
+.logout{
+	order: -2;
+	/*flex-grow:1 ;
+	*/
+	flex-grow:10;
+	flex-shrink:1 ;
+	
+	flex-basis:200px ;
+}
+
+/*.container > div{
+	flex: 1;
+
+	/*flex-grow, flex-shrink, flex-basis*/
+
+/*} */
+
+/*.container>.home {
+	flex: 2;
+}
+*/
+/*
+.logout{
+	align-self: flex-start;
+
+}
+
+.home{
+	align-self: flex-end;
+}
+*/
+

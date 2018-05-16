@@ -1,0 +1,67 @@
+/*Positions.css this is for testing positioning in a 
+grid layout*/
+
+
+.container{	
+				padding: 0;
+			
+				border: none;
+				
+				height: 100%; 
+				display: grid;
+				grid-gap: 3px;
+				/*rows first then columns
+			
+				grid-template-columns: repeat(12,1fr);
+				grid-template-rows:40px auto 40px;
+				/*adding a grid template area property/
+				grid-template-areas:"m h h h h h h h h h h h"
+									"m c c c c c c c c c c c"
+									"m f f f f f f f f f f f" ;
+									*/
+				grid-template-columns:[main-start] 1fr [content-start] 5fr [content-end main-end];
+				grid-template-rows:[main-start] 40px[content-start] auto [content-end]40px[main-end];					
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+
+
+.header{
+
+
+	/*grid-column-start: 1;
+	grid-column-end: 3;*/
+
+	/*the above uses grid lines, not boxes necesarily*/
+
+	grid-column: main;
+	/*this is short hand for the above*/
+	 display: flex; /* Make it flexbox */
+    justify-content: center; /* Align Right */
+    align-items: center; /* Center Vertically */
+	/*grid-area: h;*/
+
+}
+
+.menu{
+		 display: flex; /* Make it flexbox */
+    justify-content: center; /* Align Right */
+    align-items: center; /* Center Vertically */
+		/*grid-area:m;*/
+	 }
+
+.content{
+	/*grid-column: content;*/
+		 display: flex; /* Make it flexbox */
+    justify-content: center; /* Align Right */
+    align-items: center; /* Center Vertically */
+	grid-area: content;
+}
+
+.footer{
+	grid-column:  main;
+		 display: flex; /* Make it flexbox */
+    justify-content: center; /* Align Right */
+    align-items: center; /* Center Vertically */
+	/*grid-area: f;*/
+}

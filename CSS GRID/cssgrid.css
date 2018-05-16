@@ -1,0 +1,20 @@
+body{
+	background-color:black; 
+}
+
+div{
+	background-color: green;
+	text-align: center;
+	color: white;
+	border:white solid 3px;
+}
+
+.container{
+				border: none;
+				display: grid;
+				/*rows first then columns*/
+				grid-template:repeat(2,40px)/repeat(2,1fr);
+				grid-gap: 3px;
+				margin-left: 1em;
+				margin-right: 1em;
+			}

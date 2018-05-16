@@ -1,0 +1,45 @@
+/*memegallery.css*/
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+   /* grid-auto-flow: row; lays out grid items automatically by row*/
+   grid-auto-flow: dense; /*fills up the spots*/
+}
+
+.horizontal {
+	/*
+	*this will leave gaps*
+	grid-column:1/span 2 ;
+
+* this will make sure each picture starts on the next grid line
+	grid-column:auto/ span 2;
+	*/
+	grid-column: span 2;
+
+}
+
+.vertical {grid-row: span 2}
+.long{grid-row: span 3}
+.lg-vertical{grid-row: span 3;
+	grid-column:span 2}
+	.xlg-vertical{grid-row: span 4;
+	grid-column:span 2}
+
+.big {
+	/*this will leave spots
+		without grid auto-flow.
+	*/
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.xbig {
+	/*this will leave spots
+		without grid auto-flow.
+	*/
+	grid-column: span 4;
+	grid-row: span 3;
+}

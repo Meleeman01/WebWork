@@ -1,0 +1,64 @@
+/*Positions.css this is for testing positioning in a 
+grid layout*/
+
+
+.container{	
+								
+				height: 100%; 
+				display: grid;
+				grid-gap: 3px;
+				
+				grid-template-columns:repeat(12,1fr);
+				grid-template-rows:40px auto 40px;	
+				//justify-items: start;/*aligns horizontally*/
+				//align-items: center;				
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+
+
+.header{
+
+
+	/*grid-column-start: 1;
+	grid-column-end: 3;*/
+
+	/*the above uses grid lines, not boxes necesarily*/
+
+	grid-column: 1/-1;
+
+	/*this is short hand for the above*/
+	 display: flex; /* Make it flexbox */
+    justify-content: center; /* Align Right */
+    align-items: center; /* Center Vertically */
+	/*grid-area: h;*/
+
+}
+
+.menu{
+	grid-column: 1/3;
+		 display: flex; /* Make it flexbox */
+    justify-content: center; /* Align Right */
+    align-items: center; /* Center Vertically */
+		/*grid-area:m;*/
+	 }
+
+.content{
+	//justify-self:center;
+	//align-self: end;
+	grid-column: 3/-1;
+
+	/*grid-column: content;*/
+		 display: flex; /* Make it flexbox */
+    justify-content: center; /* Align Right */
+    align-items: center; /* Center Vertically */
+
+}
+
+.footer{
+	grid-column:1/-1;
+		 display: flex; /* Make it flexbox */
+    justify-content: center; /* Align Right */
+    align-items: center; /* Center Vertically */
+	/*grid-area: f;*/
+}
