@@ -20,11 +20,16 @@ h1, p{
 }
 
 .item {
-	--red: #ff8e69;
+	--yellow-item:ffe55b ;
     background: var(--yellow);
 }
 
 button {
     background: var(--red);
     color: var(--yellow);
+}
+
+.featured {
+     --yellow-item: #ffe55b;
+    --red: #ff5564;   
 }
