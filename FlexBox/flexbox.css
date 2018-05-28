@@ -4,7 +4,7 @@ axis is top to bottom. different CSS properties to style. direction can be flipp
 .container {
 	border: 5px solid #ffcc5c;
 	display: flex;
-	//flex-wrap: wrap;
+	flex-wrap: wrap;
 //height: 100%;
 //flex-direction: column;
 	/*align-items: flex-end; /*justify's content on Y-axis*/
