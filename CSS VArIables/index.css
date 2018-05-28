@@ -1,9 +1,18 @@
+
+
+/*Variable DeClArAtIoNs*/
 :root{
 	/*varibles in this are global*/
 	--red: #ff6f69;
 	--beige:#ffeead ;
 	--yellow: #ffcc5c;
+	--main-color: var(--red);
 }
+.grid{
+	--columns: 200px 200px;
+}
+
+/*Styles ehreee*/
 html, body {
     background:var(--beige) ;
     color: var(--red);
@@ -17,6 +26,13 @@ h1, p{
 
 #navbar a {
     color: var(--nav-red);
+}
+.grid {
+    display: grid;
+    grid-template-columns: var(--columns);
+    grid-auto-rows: 140px;
+    grid-gap: 20px;
+    justify-content: center;
 }
 
 .item {
@@ -32,4 +48,15 @@ button {
 .featured {
      --yellow-item: #ffe55b;
     --red: #ff5564;   
+}
+
+@media all and (max-width: 450px) {
+	.grid{
+		--columns: 200px;
+		margin-bottom: 1em;
+	}
+
+	:root{
+		--beige:#281e2f;
+	}
 }
