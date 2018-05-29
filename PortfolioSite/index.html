@@ -11,57 +11,91 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<nav>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	
+
+	<nav >
 		
-			<a href="#"><div>Home</div></a>
-			<a href="#"><div>About</div></a>
-			<a href="#"><div>Contact</div></a>
-			<a href="#"><div>AQ</div></a>
+			<a href="#Home"><div>Home</div></a>
+			<a href="#About"><div>About</div></a>
+			<a href="#Contact"><div>Contact</div></a>
+			<a  href="#AQ"><div>AQ</div></a>
 		
 	</nav>
-	<main class="page">
-		<div class="Home" style="display:grid;"><!--this is grid-->
+<div class="navigation"></div>
+	<main class="page ">
+		<div  class="Home" style="display:grid;"><!--this is grid-->
 			
 			<div class="WebProjects" >
-				<figure><figcaption><h1>Web projects</h1></figcaption></figure>
+				<h1>Web projects</h1>
+				
 				
 				<figure>
 					
-					<img src="WebComic.png" alt="WebComic" height="265">
+					<a href="http://fmlftw.atwebpages.com" target="new_window"><img src="WebComic.png" alt="WebComic" height="265"></a>
 				</figure>
-				<figure><p data-height="265" data-theme-id="dark" data-slug-hash="ddwVvp" data-default-tab="css,result" data-user="Meleeman01" data-embed-version="2" data-pen-title="Random Quote Generator" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Meleeman01/pen/ddwVvp/">Random Quote Generator</a> by Paul Frank (<a href="https://codepen.io/Meleeman01">@Meleeman01</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+				<figure><p style="margin-top:0;" data-height="265" data-theme-id="dark" data-slug-hash="ddwVvp" data-default-tab="css,result" data-user="Meleeman01" data-embed-version="2" data-pen-title="Random Quote Generator" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Meleeman01/pen/ddwVvp/">Random Quote Generator</a> by Paul Frank (<a href="https://codepen.io/Meleeman01">@Meleeman01</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 				<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 			    </figure>
 				<figure>
 				<p data-height="265" data-theme-id="dark" data-slug-hash="dNyyam" data-default-tab="result" data-user="Meleeman01" data-embed-version="2" data-pen-title="Tribute Page" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/Meleeman01/pen/dNyyam/">Tribute Page</a> by Paul Frank (<a href="https://codepen.io/Meleeman01">@Meleeman01</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-				<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+				
 				</figure>
 				
 			</div>
 			
 			<div class="AnimationProjects">
 				<h1>Animation Projects</h1>
-				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h6o7ytSkaZI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				
+				<iframe  height="315" src="https://www.youtube-nocookie.com/embed/lltu7gp4uU4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe   height="315" src="https://www.youtube-nocookie.com/embed/XViLEW81T6M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe  height="315" src="https://www.youtube-nocookie.com/embed/wkjUGXLXuuc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
+
+			
+			<div class="socialMedia">
+				<h1>Social Media feed</h1>
+			<figure><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffmlftwcomic%2F&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden; margin-bottom:1em;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></figure>	
+			
+			<figure><a  class="twitter-timeline" data-width="300" data-height="300" data-theme="dark" href="https://twitter.com/Meleeman?ref_src=twsrc%5Etfw">Tweets by Meleeman</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</figure>
+			
+
+			
+			</div>	
+			
+		
+			
 			
 		</div>
-		<div class="About">
+		<div id="#About" class="About">
 			<h1>about</h1>
 
 		</div>
-		<div class="Contact">
-			
+		<div id="#Contact" class="Contact">
+			<h1>Contact</h1>
+
 		</div>
 		<div class="AQ">
-			
+			<h1>Anticipated Questions</h1>
+
 		</div>
 	</main>
 
 <footer>Vincent Frank Paul &copy; <span id="date"></span> some rights reserved.</footer>	
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <script src="slick-master/slick/slick.js"></script>
 <script src="behaviors.js"></script>
+
 </body>
 <!--<script src="jquery.js"></script>-->
 
