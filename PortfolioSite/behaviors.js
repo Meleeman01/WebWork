@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     
   });
- $('#HomeN').click(function(){
+ $('#AboutN').click(function(){
  	alert("home was clicked");
  });
 
