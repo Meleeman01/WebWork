@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('.page').slick({
 
   infinite: true,
-  speed: 300,
+  speed: 500,
   slidesToShow: 1,
   adaptiveHeight: true,
   dots:true,
@@ -11,7 +11,8 @@ $(document).ready(function(){
     
   });
  $('#AboutN').click(function(){
- 	alert("home was clicked");
+ 	$('#slick-slide-control01').click();
+
  });
 
   //below is for the footer
