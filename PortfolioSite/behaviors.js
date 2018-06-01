@@ -10,8 +10,20 @@ $(document).ready(function(){
 
     
   });
+ $('#HomeN').click(function(){
+ 	$('#slick-slide-control00').click();
+
+ });
  $('#AboutN').click(function(){
  	$('#slick-slide-control01').click();
+
+ });
+ $('#ContactN').click(function(){
+ 	$('#slick-slide-control02').click();
+
+ });
+ $('#AQN').click(function(){
+ 	$('#slick-slide-control03').click();
 
  });
 
@@ -19,4 +31,6 @@ $(document).ready(function(){
 var d=new Date();
 var n=d.getFullYear();
 document.getElementById("date").innerHTML=n;
+
+
 });

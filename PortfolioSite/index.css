@@ -1,8 +1,12 @@
 /*CSS Variables declarations */
-
+body{
+	background-color: white;
+}
 :root{
 	--main-color: #c70000; /*red*/
 	--text-color: #ffffff;
+	--divcolor-one: #ccc;
+	--bevel: 10px;
 }
 
 /*Navs and Links*/
@@ -68,6 +72,7 @@ border-radius:5px ;
  max-width: 1080px;
  background-color: white ;
 }
+
 /*First Page ----------------------------------------------------------------------------*/
 .Home{
 	padding: 2em 0;
@@ -87,7 +92,8 @@ border-radius:5px ;
 }
 
 .WebProjects{
-
+	background-color: var(--divcolor-one);
+	border-radius:var(--bevel);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -107,6 +113,7 @@ border-radius:5px ;
 	text-align: center;
 }
 .AnimationProjects{
+	border-radius:var(--bevel);
 	border:dotted 1px black ;
 	display: flex;
 	align-items: center;
@@ -133,6 +140,7 @@ border-radius:5px ;
 }
 
 .socialMedia{
+	border-radius:var(--bevel);
 	 border: dotted black 1px;
 	 flex: 10 1 300px;
 	justify-content: space-evenly;
@@ -156,6 +164,31 @@ max-width: 300px;
 /*About Page *******************************>*>*>*>*>*>*>*>*>*>>*>*>>*>**/
 .About{
 	display: grid!important;
+	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+	grid-gap: 10px;
+
+	grid-auto-flow: row;
+
+}
+.About h1{
+	grid-column: span 3;
+	text-align: center;
+}
+
+.article1{
+ 	padding: 1em;
+ 	grid-column: span 1;
+}
+.article2{
+	padding: 1em;
+	grid-column: span 1;
+}
+.article3{
+	padding: 1em;
+	grid-column: span 1;
+}
+.Aboutimg{
+	grid-column: span 3;
 }
 
 
