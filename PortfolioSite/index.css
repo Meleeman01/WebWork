@@ -66,15 +66,19 @@ border-radius:5px ;
 }
 /*Main Designs*/
 .page{
+	display: block;
  margin-top: 2em;
  margin-bottom: 2em;
  margin: 0 auto;
  max-width: 1080px;
+ width: 100%;
+
  background-color: white ;
 }
 
 /*First Page ----------------------------------------------------------------------------*/
 .Home{
+
 	padding: 2em 0;
 	padding-left:0 ;
 	display: grid!important;
@@ -164,31 +168,53 @@ max-width: 300px;
 /*About Page *******************************>*>*>*>*>*>*>*>*>*>>*>*>>*>**/
 .About{
 	display: grid!important;
-	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-	grid-gap: 10px;
+	grid-template-columns:repeat(3,minmax(300px,1fr));
+	grid-gap: 5px;
 
-	grid-auto-flow: row;
-
+	//grid-auto-flow: row;
+	 margin-right: 0;
+   margin-left: 0;
+   text-align: center;
+   border-radius: 10px;
 }
+
+
 .About h1{
 	grid-column: span 3;
-	text-align: center;
+	grid-row: span 1;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .article1{
  	padding: 1em;
  	grid-column: span 1;
+ 	grid-row: span 1;
+
+ 	border: dotted black 1px;
+ 	background-color:red;
+ 
 }
 .article2{
 	padding: 1em;
 	grid-column: span 1;
+	grid-row: span 1;
+	border: dotted black 1px;
+	background-color:green;
 }
 .article3{
 	padding: 1em;
 	grid-column: span 1;
+	grid-row: span 1;
+	border: dotted black 1px;
+	background-color: blue;
 }
 .Aboutimg{
 	grid-column: span 3;
+	grid-row: span 1;
+	border: dotted black 1px;
 }
 
 
@@ -303,6 +329,9 @@ iframe{
     flex: 1 1 300px;
  	 margin: 0 0.1em 0 0.1em;
 }
+/*About page media queries-------------------------------------*/
+
+
 }
 @media only screen and (max-width: 609px) {
 
