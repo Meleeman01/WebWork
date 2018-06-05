@@ -41,11 +41,9 @@ app.post('/send',(req,res)=>{
 	`;
 	 // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: 'mail.protonmail.com',
-        port: 1025,
-        secure: false, // true for 465, false for other ports
+       	service: 'gmail',
         auth: {
-            user: 'VFPmedia@protonmail.com', // generated ethereal user
+            user: 'vfpmailserver@gmail.com', // generated ethereal user
             pass: 'Eflatmajor#1' // generated ethereal password
         }
     });
@@ -53,7 +51,7 @@ app.post('/send',(req,res)=>{
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"Nodemailer Contact 👻" <VFPmedia@protonmail.com>', // sender address
-        to: 'meleeman01@live.com, VFPmedia@protonmail.com', // list of receivers
+        to: 'meleeman01@gmail.com, VFPmedia@protonmail.com', // list of receivers
         subject: 'Node Contact Request ✔', // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body
