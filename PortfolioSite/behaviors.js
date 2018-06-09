@@ -5,7 +5,7 @@ $(document).ready(function(){
   speed: 500,
   slidesToShow: 1,
   adaptiveHeight: true,
-  responsive:true,
+  responsive:false,
   dots:true,
   appendDots:".navigation"
 

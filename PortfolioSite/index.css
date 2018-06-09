@@ -264,11 +264,15 @@ max-width: 300px;
 	border: solid black 1px;
 	grid-row: span 1;
 	grid-column: span 3;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 #appcontainer{
 	border: dotted black 1px;
 	grid-row: span 7;
 	grid-column: span 3;
+	height: 100%;
 }
 #appcontainer iframe{
 	margin: 0;
