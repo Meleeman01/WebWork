@@ -5,9 +5,12 @@ $(document).ready(function(){
   speed: 500,
   slidesToShow: 1,
   adaptiveHeight: true,
-  responsive:false,
+  responsive:true,
   dots:true,
+  mobileFirst:true,
+ 
   appendDots:".navigation"
+ 
 
     
   });
@@ -27,6 +30,8 @@ $(document).ready(function(){
  	$('#slick-slide-control03').click();
 
  });
+
+
 
   //below is for the footer
 var d=new Date();

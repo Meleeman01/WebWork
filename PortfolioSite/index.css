@@ -1,6 +1,11 @@
 /*CSS Variables declarations */
-body{
-	background-color: white;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#wrapper{
+	margin: 0 1em;
 }
 :root{
 	--main-color: #c70000; /*red*/
@@ -63,6 +68,9 @@ border-radius:5px ;
 
 .slick-dots{
 	position: static;
+}
+.slick-active{
+	display: none;
 }
 /*Main Designs*/
 .page{
@@ -265,7 +273,7 @@ max-width: 300px;
 	grid-row: span 1;
 	grid-column: span 3;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 #appcontainer{
@@ -312,9 +320,9 @@ figcaption{
 
 iframe{
 	width: 100%;
-	max-width: 300px;
+	max-width: 400px;
 	min-width:0;
-	height: 100%;
+	height: 15em;
 
 }
 
