@@ -34,6 +34,7 @@ app.post('/send',(req,res)=>{
 		<li>company: ${req.body.company}</li>
 		<li>email: ${req.body.email}</li>
 		<li>phone: ${req.body.phone}</li>
+	
 	</ul>
 	<h3>Message:</h3>
 	<p>${req.body.message}</p>
