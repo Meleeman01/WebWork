@@ -225,6 +225,16 @@ max-width: 300px;
 	background-color: blue;
 	border-radius:var(--bevel) ;
 }
+.article1 p{
+	text-align: justify;
+}
+
+.article2 p{
+	text-align: justify;
+}
+.article3 p{
+	text-align: justify;
+}
 .Aboutimg{
 	grid-column: span 6;
 	grid-row: span 1;
