@@ -2,15 +2,21 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background-image: url('https://rdyar.gitlab.io/background-generator/background-generators/polka-dot-pattern-generator/?bgc=ffffff&cc=f90600&sw=6&ox=54&oy=50&dj=2&da=125&r2=30&fos=stroke&rr=90&lj=0&cj=16&dcs=5x7');
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+font-family: sans-serif;
 }
+  p{
+	line-height: 1.5em;
 
+}
 #wrapper{
 	margin: 0 1em;
 }
 :root{
 	--main-color: #c70000; /*red*/
 	--text-color: #ffffff;
-	--divcolor-one: #ccc;
+	--divcolor-one:rgba(200,200,200,0.7);
 	--bevel: 10px;
 }
 
@@ -81,7 +87,7 @@ border-radius:5px ;
  max-width: 1080px;
  width: 100%;
 
- background-color: white ;
+
 }
 
 /*First Page ----------------------------------------------------------------------------*/
@@ -125,6 +131,7 @@ border-radius:5px ;
 	text-align: center;
 }
 .AnimationProjects{
+	background-color: var(--divcolor-one);
 	border-radius:var(--bevel);
 	border:dotted 1px black ;
 	display: flex;
@@ -152,6 +159,7 @@ border-radius:5px ;
 }
 
 .socialMedia{
+	background-color: var(--divcolor-one);
 	border-radius:var(--bevel);
 	 border: dotted black 1px;
 	 flex: 10 1 300px;
@@ -199,30 +207,33 @@ max-width: 300px;
 }
 
 .article1{
+	background-color: var(--divcolor-one);
  	padding: 1em;
  	grid-column: span 2;
  	grid-row: span 1;
 
  	border: dotted black 1px;
- 	background-color:red;
+ 	
  	border-radius:var(--bevel) ;
  
 }
 .article2{
+	background-color: var(--divcolor-one);
 	padding: 1em;
 	grid-column: span 2;
 	grid-row: span 1;
 	border: dotted black 1px;
-	background-color:green;
+
 	border-radius:var(--bevel) ;
 
 }
 .article3{
+	background-color: var(--divcolor-one);
 	padding: 1em;
 	grid-column: span 2;
 	grid-row: span 1;
 	border: dotted black 1px;
-	background-color: blue;
+	
 	border-radius:var(--bevel) ;
 }
 .article1 p{
@@ -270,6 +281,7 @@ max-width: 300px;
 }
 
 .Contact>div{
+	background-color: var(--divcolor-one);
 	display: flex;
 	display: -webkit-box;
     display: -moz-box;
@@ -318,6 +330,7 @@ max-width: 300px;
 /*End of COntact Page---------------------_____--___-----___-_____----____-----____---____---___---___-*/
 .AQ{
 	display: grid!important;
+	background-color: var(--divcolor-one);
 }
 img{
 	width: 100%;
