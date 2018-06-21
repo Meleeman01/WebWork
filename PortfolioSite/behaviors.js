@@ -46,3 +46,11 @@ document.getElementById("date").innerHTML=n;
  $('html').css('display','block');
  $('body').css('display','block');
 });
+
+
+function closePbox(){
+	console.log('closing privacy notice');
+	var privacyBox = document.getElementById('privacybox');
+	privacybox.style.display='none';
+	privacybox.style.visibility='hidden';
+};

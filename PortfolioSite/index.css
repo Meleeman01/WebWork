@@ -11,6 +11,10 @@ font-family: myFirstFont, serif;
 display: none;
 
 }
+#privacybox{
+
+	background-color: #bbb;
+}
 
 .selector{
 	transition-delay: 5s;
@@ -174,6 +178,7 @@ border-radius:5px ;
 .socialMedia{
 	background-color: var(--divcolor-one);
 	border-radius:var(--bevel);
+	display: flex;
 	 border: dotted black 1px;
 	 flex: 10 1 300px;
 	justify-content: space-evenly;
