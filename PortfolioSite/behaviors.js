@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+
+
   $('.page').slick({
 
   infinite: true,
@@ -38,5 +41,8 @@ var d=new Date();
 var n=d.getFullYear();
 document.getElementById("date").innerHTML=n;
 
+//$('body').css('display','block');
 
+ $('html').css('display','block');
+ $('body').css('display','block');
 });
