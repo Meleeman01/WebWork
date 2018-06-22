@@ -6,15 +6,15 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    //background-image: url('dotsSeamless.jpg');
+   
 font-family: myFirstFont, serif;
 display: none;
 
 }
-#privacybox{
 
-	background-color: #bbb;
-}
+
+	
+
 
 .selector{
 	transition-delay: 5s;
@@ -34,6 +34,7 @@ display: none;
 	--text-color: #ffffff;
 	--divcolor-one:rgba(200,200,200,0.7);
 	--bevel: 10px;
+	--basic-shadow: 1px 1px 3px;
 }
 
 /*Navs and Links*/
@@ -45,7 +46,7 @@ a:link{
 a:visited{
   color: var(--main-color);
 }
-a:hover{
+nav>a:hover{
  color: white;
  transition: background-color 0.5s ease;
 background-color:rgba(255,0,0,0.3);
@@ -57,10 +58,37 @@ a:active{
 a:focus{
 
 }
+/*this is For EU Citizens*/
+#privacybox{
 
+	background-color: #bbb;
+	padding: .75em;
+line-height: 1em;
+font-family: courier;
+font-size: 14px;
+
+border-radius: var(--bevel);
+margin-bottom: 1em;
+box-shadow: var(--basic-shadow);
+}
+#privacybox a:link{
+ color: var(--main-color);
+}
+#privacybox a:visited{
+ color: var(--main-color);
+}
+#privacybox a:hover{
+ color: white;
+}
+#privacybox i:hover{
+	color: red;
+}
+#privacybox i:active{
+	color: white;
+}
 nav{
 
-   // background-color:var(--main-color);
+   
    
     padding: 0;
 	text-align: center;
@@ -139,7 +167,7 @@ border-radius:5px ;
 
 .WebProjects>figure{
 	flex: 10 1 300px;
-	//height: 300px;
+	
 	text-align: center;
 	margin: 0;
 	width: 100%;
@@ -161,7 +189,7 @@ border-radius:5px ;
 	flex: 10 1 300px;
 	height: 300px!important;
 	margin-bottom:1em;
-	//width: 100%;
+	
 	max-width: 500px;
 	
 	
@@ -219,7 +247,7 @@ max-width: 300px;
 	grid-column: span 6;
 	grid-row: span 1;
 	display: flex;
-	//align-items: center;
+	
 	flex-wrap: wrap;
 	flex-direction: column;
 }
@@ -267,12 +295,12 @@ max-width: 300px;
 .Aboutimg{
 	grid-column: span 6;
 	grid-row: span 1;
-		border: dotted black 1px;
+		
 	border-radius:var(--bevel) ;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	
 }
 .Aboutimg figure{
 	margin-top: 3em;
@@ -301,10 +329,7 @@ max-width: 300px;
 .Contact>div{
 	background-color: var(--divcolor-one);
 	display: flex;
-	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+	
 
 }
 .Contact>h1{
@@ -313,18 +338,34 @@ max-width: 300px;
 }
 
 #social{
-	border: solid black 1px;
-	grid-row: span 1;
-	grid-column: span 3;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
+	    border: dotted black 1px;
+        border-bottom-width: 1px;
+        border-bottom-style: dotted;
+        border-bottom-color: black;
+    grid-row: span 1;
+    grid-column: span 3;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: none;
+    background: white;
+    border-radius: var(--bevel) var(--bevel) 0 0;
 }
 #social figure {
 	margin: 0 2em;
 	margin-right:0em;
 
 }
+#social>figure>a>i:hover{
+  color: #eee;
+}
+#social>figure>a:link{
+  color:var(--main-color);
+}
+#social>figure>a:hover{
+  color: #eee;
+}
+
 #appcontainer{
 	border: dotted black 1px;
 	grid-row: span 7;
@@ -348,8 +389,11 @@ max-width: 300px;
 /*End of COntact Page---------------------_____--___-----___-_____----____-----____---____---___---___-*/
 .AQ{
 	display: grid!important;
+	
+}
+.AQ article{
 	background-color: var(--divcolor-one);
-
+	border-radius: var(--bevel);
 }
 img{
 	width: 100%;
@@ -358,7 +402,7 @@ img{
 	margin-left:auto;
 	margin-right: auto;
 	object-fit: cover;
-	object-position: 0,0;
+	object-position: 0 0;
 }
 /*footer*/
 footer{
@@ -413,12 +457,12 @@ iframe{
     align-self: center;
     text-align: center;
     flex: 1 0 300px;
-    //margin: 10em 0.1em 0 0.1em;
+   
 }
 .socialMedia>figure:nth-child(3){
     align-self: center;
     flex: 1 1 300px;
- 	 //margin: 10em 0.1em 0 0.1em;
+ 	 
 }
 
 .Home{
@@ -504,7 +548,7 @@ iframe{
 }
 /*About page media queries-------------------------------------*/
 #social{
-	border: solid black 1px;
+	
 	grid-row: span 1;
 	grid-column: span 3;
 	flex-wrap: wrap;
